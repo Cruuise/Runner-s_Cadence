@@ -32,19 +32,18 @@ def seconds_to_str(seconds):
         power /= 60
         print(f"seconds left: {seconds}")
     time = ':'.join(time_arr)
-    print(time_arr)
-    print(time)
-    return time_arr
+    # print(time_arr)
+    # print(time)
+    return time
 
 # returns average mile time in seconds
 def avg_mile_time(time: int, dist: float) -> float:
     if dist < 1.0:
         # increase it to 1 here
-        # return value
-        hello = 1
-    return int(time/dist)
+        # FOR TESTING PURPOSES REURN LARGE NUM
+        return 99999.0
+    return float(time/dist)
     # divide time by distance, return that (maybe make it round up and then turn it into int if required)
-    return 0
 
 
 # Assume "1:02:3"
